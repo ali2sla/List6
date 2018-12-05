@@ -64,6 +64,27 @@ public class Controller {
         for (int i = 0; i < sideListViewTexts.size(); i++) {
             //sideListView.getItems().add(new TextView((String)sideListViewTexts.get(i)));
         }
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backTextReady();
+            }
+        });
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextTextReady();
+            }
+        });
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bottomTextFieldReady();
+            }
+        });
     }
 
     void save() {
